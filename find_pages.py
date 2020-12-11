@@ -24,6 +24,7 @@ url_regex = re.compile(
         r'(?::\d+)?' # optional port
         r'(?:/?|[/?]\S+)$', re.IGNORECASE)
 
+
 def get_titles_from_warc(url):
     resp = requests.get(url, stream=True)
 
