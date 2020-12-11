@@ -1,4 +1,4 @@
-# Web page extraction based on query - TLinternship2020
+# Web URI extraction based on relevance to query - TLinternship2020
 
 This is a summary of the work that has been done in this project to fetch URIs whose 
 contents match a given query string.
@@ -62,6 +62,12 @@ limitation of number of tokens that can be fed into the model.
 One more major change in this approach is that, instead of using the 
 query string directly, a corpus is created with several gold standard reference 
 articles that the web pages can be compared to. 
+
+The notebook ```demo_page_content_vs_ref_artile.ipynb``` explores the viability of this approach.
+Some gold standard articles are used to train a tf-idf vectorizer that is later used to
+embed web page content. These embeddings are used to compute cosine similarities with the reference articles.
+
+ The files ```compare_articles.py``` and ```compare_articles.ipynb``` use the above technique to find and store web URIs with relevant content to query string.
 
 The web URIs pass through the same rigorous filtering process as before. But instead of 
 extracting the title, html content of the web page is parsed by ```BeautifulSoup```.
