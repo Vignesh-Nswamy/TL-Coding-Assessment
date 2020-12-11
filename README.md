@@ -82,6 +82,8 @@ contents are embedded completely thus having embeddings that capture more meanin
 However, in practice, due to the data format, it is extremely expensive to clean and extract text
 from the html content. This proved to be a major disadvantage of this approach.
 
+All WARC files from March of 2020 to December 2020 has been used here.
+
 ### Other worthy mentions
 
 #### Embedding content summary instead of an entire web page
