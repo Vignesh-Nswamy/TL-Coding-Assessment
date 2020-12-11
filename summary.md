@@ -108,6 +108,15 @@ Comparing the two major approaches, **Identifying matching URIs using the cosine
  seems to be the clear winner because it is not bottlenecked by an expensive text
 extraction and cleaning process.
 
+## Assumptions
+
+The BERT encodings capture the true meaning of everything that is fed into it.
+A pre-trained sentence BERT I believe, is good at embedding properly.
+
+Invalid URIs as decided by regular expression parser, do not contain useful information.
+
+Because the query is in english, it makes sense to compare it with sentences of the same language.
+
 
 
 
