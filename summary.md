@@ -20,7 +20,7 @@ and with english content have been taken for further processing.
 
 ## Approaches
 
-###Identifying matching URIs using the cosine similarities between web pages' title and the given query string
+### Identifying matching URIs using the cosine similarities between web pages' title and the given query string
 
 The core idea of this approach is that, **in an embedding space, similar objects 
 lie close to eac other**. Extending this to web pages, we can say that,
