@@ -25,7 +25,10 @@ and with english content have been taken for further processing.
 The core idea of this approach is that, **in an embedding space, similar objects 
 lie close to eac other**. Extending this to web pages, we can say that,
 web **pages with similar content, and this similar titles, when embedded into an 
-n-dimensional vector, are not far away from each other**.
+n-dimensional vector, are not far away from each other**. 
+
+Thus, in this approach the cosine similarities
+between the embeddings of a page's title and query string decide whether there is relevance or not.
 
 For the sake of simplicity and for direct comparison with embeddings of the query string,
 in this approach, we encode only the title of each web page using 
@@ -53,7 +56,10 @@ The **WARC files** used here are of the months **November/December 2020 and Octo
 ### Utilizing cosine similarities between embeddings of entire web page content to find best matches with query string
 
 This approach takes the concepts of the previous approach and **extends it to 
-and entire document or article instead of just the title** of a web page.
+and entire document or article instead of just the title** of a web page. 
+
+In this approach, tf-idf document vector
+of each web page is used to compute a similarity measure with the reference articles
 
 However, to keep things interesting, ```tf-idf document vectors``` are used instead of 
 sentence BERT encodings. This approach bypasses one of the very few disadvantages of BERT, that is,
